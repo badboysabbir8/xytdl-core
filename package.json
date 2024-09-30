@@ -47,7 +47,6 @@
     "url": "https://github.com/badboysabbir8/xytdl-core/issues"
   },
   "homepage": "https://github.com/badboysabbir8/xytdl-core#readme",
-  },
   "dependencies": {
     "http-cookie-agent": "^6.0.5",
     "m3u8stream": "^0.8.6",
