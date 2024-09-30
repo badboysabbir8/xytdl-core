@@ -14,7 +14,7 @@ jobs:
                   node-version: 12
                   registry-url: https://registry.npmjs.org
             - name: publish
-              run: npm publish --access public --otp=8827808834340302
+              run: npm publish --access public --otp=452187
                 
               
               env:
