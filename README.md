@@ -1,24 +1,24 @@
-# xytdl-core
+# @xnil6x/xytdl-core
 
-DisTube fork of `ytdl-core`. This fork is dedicated to fixing bugs and adding features that are not merged into the original repo as soon as possible.
+DisTube fork of `@xnil6x/xytdl-core`. This fork is dedicated to fixing bugs and adding features that are not merged into the original repo as soon as possible.
 
 <a href='https://ko-fi.com/skik' target='_blank'><img height='48' src='https://storage.ko-fi.com/cdn/kofi3.png' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## Installation
 
 ```bash
-npm install @distube/ytdl-core@latest
+npm install @xnil6x/xytdl-core@latest
 ```
 
-Make sure you're installing the latest version of `@distube/ytdl-core` to keep up with the latest fixes.
+Make sure you're installing the latest version of `@xnil6x/xytdl-core` to keep up with the latest fixes.
 
 ## Usage
 
 ```js
-const ytdl = require("@distube/ytdl-core");
-// TypeScript: import ytdl from '@distube/ytdl-core'; with --esModuleInterop
-// TypeScript: import * as ytdl from '@distube/ytdl-core'; with --allowSyntheticDefaultImports
-// TypeScript: import ytdl = require('@distube/ytdl-core'); with neither of the above
+const ytdl = require("@xnil6x/xytdl-core");
+// TypeScript: import ytdl from '@xnil6x/xytdl-core'; with --esModuleInterop
+// TypeScript: import * as ytdl from '@xnil6x/xytdl-core'; with --allowSyntheticDefaultImports
+// TypeScript: import ytdl = require('@xnil6x/xytdl-core'); with neither of the above
 
 // Download a video
 ytdl("http://www.youtube.com/watch?v=aqz-KE-bpKQ").pipe(require("fs").createWriteStream("video.mp4"));
@@ -37,7 +37,7 @@ ytdl.getInfo("http://www.youtube.com/watch?v=aqz-KE-bpKQ").then(info => {
 ### Cookies Support
 
 ```js
-const ytdl = require("@distube/ytdl-core");
+const ytdl = require("@xnil6x/xytdl-core");
 
 // (Optional) Below are examples, NOT the recommended options
 const cookies = [
@@ -103,7 +103,7 @@ const agent = ytdl.createAgent([
 - Or you can paste your cookies array into a file and use `fs.readFileSync` to read it.
 
 ```js
-const ytdl = require("@distube/ytdl-core");
+const ytdl = require("@xnil6x/xytdl-core");
 const fs = require("fs");
 const agent = ytdl.createAgent(JSON.parse(fs.readFileSync("cookies.json")));
 ```
@@ -111,7 +111,7 @@ const agent = ytdl.createAgent(JSON.parse(fs.readFileSync("cookies.json")));
 ### Proxy Support
 
 ```js
-const ytdl = require("@distube/ytdl-core");
+const ytdl = require("@xnil6x/xytdl-core");
 
 const agent = ytdl.createProxyAgent({ uri: "my.proxy.server" });
 
@@ -122,7 +122,7 @@ ytdl.getInfo("http://www.youtube.com/watch?v=aqz-KE-bpKQ", { agent });
 Use both proxy and cookies:
 
 ```js
-const ytdl = require("@distube/ytdl-core");
+const ytdl = require("@xnil6x/xytdl-core");
 
 const agent = ytdl.createProxyAgent({ uri: "my.proxy.server" }, [{ name: "cookie", value: "COOKIE_HERE" }]);
 
@@ -138,8 +138,8 @@ To implement IP rotation, you need to assign the desired IP address to the `loca
 Therefore, you'll need to use a different `ytdl.Agent` for each IP address you want to use.
 
 ```js
-const ytdl = require("@distube/ytdl-core");
-const { getRandomIPv6 } = require("@distube/ytdl-core/lib/utils");
+const ytdl = require("@xnil6x/xytdl-core");
+const { getRandomIPv6 } = require("@xnil6x/xytdl-core/lib/utils");
 
 const agentForARandomIP = ytdl.createAgent(undefined, {
   localAddress: getRandomIPv6("2001:2::/48"),
@@ -211,6 +211,6 @@ env YTDL_NO_UPDATE=1 node myapp.js
 
 ## Related Projects
 
-- [DisTube](https://github.com/skick1234/DisTube) - A Discord.js module to simplify your music commands and play songs with audio filters on Discord without any API key.
+- [xnil6x](https://github.com/badboysabbir8) - A Discord.js module to simplify your music commands and play songs with audio filters on Discord without any API key.
 - [@distube/ytsr](https://github.com/distubejs/ytsr) - DisTube fork of [ytsr](https://github.com/TimeForANinja/node-ytsr).
 - [@distube/ytpl](https://github.com/distubejs/ytpl) - DisTube fork of [ytpl](https://github.com/TimeForANinja/node-ytpl).
