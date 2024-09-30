@@ -1,4 +1,4 @@
-# @distube/ytdl-core
+# xytdl-core
 
 DisTube fork of `ytdl-core`. This fork is dedicated to fixing bugs and adding features that are not merged into the original repo as soon as possible.
 
