@@ -1,5 +1,5 @@
 {
-  "name": "@distube/ytdl-core",
+  "name": "xytdl-core",
   "description": "DisTube fork of ytdl-core. YouTube video downloader in pure javascript.",
   "keywords": [
     "youtube",
@@ -10,7 +10,7 @@
   "version": "4.14.4",
   "repository": {
     "type": "git",
-    "url": "git://github.com/distubejs/ytdl-core.git"
+    "url": "https://github.com/@badboysabbir8/xytdl-core"
   },
   "author": "Skick (https://github.com/skick1234)",
   "contributors": [
