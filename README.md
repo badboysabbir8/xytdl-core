@@ -1,4 +1,4 @@
-# @xnil6x/xytdl-core
+# @xnil6x/xytdl-core 1
 
 DisTube fork of `@xnil6x/xytdl-core`. This fork is dedicated to fixing bugs and adding features that are not merged into the original repo as soon as possible.
 
